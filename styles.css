@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+.baner{
+    background-color: brown;
+    height: 700px;
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+.baner img{
+    border-radius: 100px;
+    height: 150px;
+    border: 6px solid white;
+    margin-top: 100px;
+
+}
+.baner h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.baner button{
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+.baner button:hover{
+    background-color: magenta;
+    border: 1px solid white;
+    color: white;
+}
+h1 span::before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: lightblue;
+    font-size: 70px;
+
+}
+@keyframes gerak{
+    20%{
+        content: 'Selamat datang web';
+    }
+    50%{
+        content: 'saya Harun Iqbal';
+    }
+    100%{
+        content: 'Terima kasih';
+    }
+}
+
+.boxpendidikan{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin-top: 30px;
+    align-content: center;
+    background-color: blanchedalmond;
+ 
+}
+.boxkiri,.boxtengah,.boxkanan {
+    width: 350px;
+    height: 370px;
+    background-color: blue;
+    text-align: center;
+    padding: 40px 30px;
+    margin: 90px 20px 50px 80px;
+    border-radius: 20px;
+    float: left;
+}
+.boxkiri img{
+    height: 150px;
+}
+.boxkanan img{
+    height: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.boxkiri :hover,.boxtengah :hover,.boxkanan :hover{
+    background-color: black;
+    color: antiquewhite;
+}
+.boxpendidikan h3,p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 12px;
+}
+
+.boxsofkil{
+    text-align: center;
+    color: black;
+    align-content: center;
+    background-color: aquamarine;
+ 
+}
+.boxkiriskil,.boxtengahskil,.boxkananskil{
+    width: 350px;
+    height: 370px;
+    background-color: blue;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 90px 20px 50px 80px;
+    border-radius: 20px;
+    float: left;
+}
+.boxkiriskil img{
+    height: 150px;
+}
+.boxtengahskil img{
+    height: 150px;
+}
+.boxkananskil img{
+    height: 150px;
+}
+.boxkananskill img{
+    height: 100px;
+    border-radius: 10px;
+
+}
+.boxsofkil h3,p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 12px;
+}
+
+.boxpengalamankerja{
+    text-align: center;
+    color: black;
+    align-content: center;
+    background-color: #ff6347;
+    
+
+
+}
+.boxpengamalan1,.boxpengamalan2,.boxpengamalan3{
+    width: 350px;
+    height: 370px;
+    background-color: blue;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 90px 20px 50px 80px;
+    border-radius: 20px;
+    float: left;
+
+}
+.boxpengamalan1 img,.boxpengamalan2 img,.boxpengamalan3 img{
+    height: 150px;
+}
+.sosialmedia{
+    text-align: center;
+
+}
+.sosialmedia ul li{
+    width: 100px;
+    display: contents;
+    font-size: 60px;
+}
+.sosialmedia ul li img{
+    height: 100px;
+}
